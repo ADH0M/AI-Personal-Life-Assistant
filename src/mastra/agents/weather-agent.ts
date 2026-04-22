@@ -29,7 +29,6 @@ export const weatherAgent = new Agent({
   tools: { weatherTool },
 
   memory: new Memory({
-    id: 'weather-memory',
     storage,
     options: {
       lastMessages: 10,

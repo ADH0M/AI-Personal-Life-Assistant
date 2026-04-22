@@ -19,6 +19,10 @@ A smart web application built with **Next.js** that acts as a personal AI assist
 
 ### 🗓️ 1. Task Management
 
+- Organize daily tasks intelligently
+- Use AI for planning and suggestions
+- Improve productivity and time management
+- Build a strong portfolio project
 - Add / edit / delete tasks
 - Prioritize tasks automatically
 - AI-powered task scheduling suggestions
@@ -60,26 +64,81 @@ A smart web application built with **Next.js** that acts as a personal AI assist
 
 ## 🧰 Tech Stack
 
-### Frontend
+## 🧰 Technologies Stack
 
-- Next.js (App Router)
-- React
+### 🖥️ Frontend
 
-### AI Layer
-
-- Mastra AI (Agents + Workflows)
-- OpenAI API or other LLM providers
-
-### Backend
-
-- Next.js API Routes
-
-### Database (Optional)
-
-- PostgreSQL / Supabase
-- or :contentReference[oaicite:0]{index=0} for lightweight local analytics
+- :contentReference[oaicite:0]{index=0}
+- :contentReference[oaicite:1]{index=1}
+- :contentReference[oaicite:2]{index=2}
+- :contentReference[oaicite:3]{index=3}
+- :contentReference[oaicite:4]{index=4}
+- :contentReference[oaicite:5]{index=5}
+- :contentReference[oaicite:6]{index=6} (motion)
 
 ---
+
+### 🤖 AI / Agent Layer
+
+- :contentReference[oaicite:7]{index=7}
+  - @mastra/core
+  - @mastra/ai-sdk
+  - @mastra/memory
+  - @mastra/duckdb
+  - @mastra/libsql
+  - @mastra/loggers
+  - @mastra/observability
+- :contentReference[oaicite:8]{index=8} (@ai-sdk/react, ai)
+
+---
+
+### 🧠 Validation & Data
+
+- :contentReference[oaicite:9]{index=9}
+
+---
+
+### 🧩 UI / Interaction Libraries
+
+- cmdk (command menu)
+- embla-carousel-react (carousel)
+- xyflow/react (flow diagrams)
+- streamdown (markdown rendering)
+- shiki (code highlighting)
+- media-chrome (media UI)
+- tokenlens (token visualization)
+
+---
+
+### ⚙️ Utilities
+
+- clsx (class handling)
+- class-variance-authority (CVA)
+- tailwind-merge (Tailwind merging)
+- nanoid (ID generation)
+- server-only (server boundary control)
+
+---
+
+### 🗄️ Database / Storage
+
+- :contentReference[oaicite:10]{index=10} (analytics)
+- libsql (lightweight SQL database for Mastra)
+
+---
+
+### 🧪 React Utilities
+
+- react-jsx-parser
+- use-stick-to-bottom
+- @radix-ui/react-use-controllable-state
+
+---
+## 🚀 Architecture Flow
+
+```txt id="flow1"
+User → Next.js UI → API Route → Mastra Agent → AI Model → Response → UI Update
+
 
 ## 🚀 Development Steps
 
@@ -138,7 +197,6 @@ Start with:
 3. Simple database storage
 
 Then gradually expand features step by step
-
 
 # project file structure
 
@@ -231,8 +289,6 @@ my-ai-assistant/
 # ⚡ Flow of the app
 
     User → Chat UI → /api/chat → Mastra Agent → AI Model → Response → UI
-
-
 
 ## Getting Started
 
