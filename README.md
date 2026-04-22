@@ -139,23 +139,6 @@ Start with:
 
 Then gradually expand features step by step
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 # project file structure
 
@@ -218,3 +201,51 @@ my-ai-assistant/
 ├── next.config.js
 ├── package.json
 └── tsconfig.json
+
+# 🧠 What each part does
+
+    📁 app/
+        - Main Next.js routes
+        - chat/page.tsx → AI chat UI
+        - tasks/page.tsx → task manager
+        - api/chat/route.ts → backend AI endpoint
+
+     📁 mastra/
+        - Your AI brain layer
+        - Agents (assistant logic)
+        - Tools (task handling, APIs)
+        - Memory (conversation history)
+
+     📁 components/
+        - UI building blocks
+        - Chat UI + Task UI separated cleanly
+
+     📁 lib/
+        - Database connection
+        - AI helpers
+        - utility functions
+
+      📁 hooks/
+        - Custom React hooks (like chat logic)
+
+# ⚡ Flow of the app
+
+    User → Chat UI → /api/chat → Mastra Agent → AI Model → Response → UI
+
+
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
